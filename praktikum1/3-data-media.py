@@ -1,7 +1,17 @@
 import streamlit as st
+
+st.title("Praktikum 1 visualisasi data")
+st.subheader("Bagian 2-data-elements")
+st.markdown("""
+nama lengkap anggota:
+1. Faizal Fandi Mulyadi - 011022084
+2. Faqih Al Fauzan - 0110222152
+3. AFNAN AINUL MARDHIYYAH - 0110222128
+""")
+
 st.write("Displaying an Images")
 #displaying image by specifying path
-st.image("Animal2.jpeg")
+st.image("assets/Animal2.jpeg")
 #image Courtesy by unplesh
 st.write("Image Courtesy: unplash.com")
 
@@ -9,10 +19,10 @@ import streamlit as st
 st.write("Displaying Multiple Image")
 #listening out animal images
 animal_images = [
-    'Animal1.jpeg',
-    'Animal2.jpeg',
-    'Animal3.jpeg',
-    'Animal4.jpeg',
+    'assets/Animal1.jpeg',
+    'assets/Animal2.jpeg',
+    'assets/Animal3.jpeg',
+    'assets/Animal4.jpeg',
    
 ]
 #Displaying Multiple images with width 150
@@ -42,13 +52,13 @@ def add_local_background_image(image):
 
 st.write("Background Image")
 # Calling Image in function
-add_local_background_image('Animal1.jpeg')
+add_local_background_image('assets/Animal1.jpeg')
 
 import streamlit as st
 from PIL import Image
 
 # Membuka gambar dari path lokal
-original_image = Image.open("Animal1.jpeg")
+original_image = Image.open("assets/Animal1.jpeg")
 
 # Menampilkan gambar asli
 st.title("Original Image")
